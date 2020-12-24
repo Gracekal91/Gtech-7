@@ -28,11 +28,21 @@ img {
   padding: 0.4rem 2rem;
   border: none;
   color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .section-content {
   width: 80%;
   margin: 0 auto;
+  padding: 3rem 0;
 }
 
 .section-headline {
@@ -46,7 +56,11 @@ img {
   background: #42C6FE;
   height: 3px;
   width: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section-paragraph {
+  margin-bottom: 0.5rem;
 }
 
 header {
@@ -122,5 +136,155 @@ header .header-content .header-paragraph {
 header .header-content .btn-header {
   background: #fc4445;
   margin-right: 15px;
+}
+
+.skills {
+  display: -ms-grid;
+  display: grid;
+}
+
+.skills .skill {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.skills .skill .skill-title {
+  font-size: 24px;
+  color: #42C6FE;
+  margin-bottom: 1.5rem;
+}
+
+.skills .skill .skill-paragraph {
+  margin-bottom: 2rem;
+}
+
+.skills .skill .icons img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.skills .skill .img-top {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects .section-content {
+  padding: 0 0 1rem 0;
+}
+
+.projects .section-content .single-row div img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.projects .section-headline {
+  margin-bottom: 0;
+}
+
+.projects .btn-project {
+  color: #ffffff;
+  background: #42C6FE;
+}
+
+.testimonials {
+  margin-top: 2rem;
+}
+
+.testimonials .testimonial-card {
+  text-align: center;
+}
+
+.testimonials .testimonial-card .tetimonail-name {
+  color: #fc4445;
+  padding: 0.5rem 0 0 0;
+  font-weight: bold;
+}
+
+.testimonials .testimonial-card .testimonial-profession {
+  font-size: 0.8rem;
+}
+
+.contact form .input-group {
+  margin-bottom: 1rem;
+}
+
+.contact form .input-group .form-control {
+  border: none;
+  border-bottom: 1.9px solid #42C6FE;
+  display: block;
+  width: 100%;
+  padding: 0.3rem 0 0.3rem 0;
+  margin-bottom: 1.3rem;
+}
+
+.contact form .input-group input:focus,
+.contact form .input-group textarea:focus {
+  outline: none;
+}
+
+.contact form .input-group textarea::-webkit-input-placeholder,
+.contact form .input-group input::-webkit-input-placeholder {
+  font-family: jura, 'sans-serif';
+}
+
+.contact form .input-group textarea:-ms-input-placeholder,
+.contact form .input-group input:-ms-input-placeholder {
+  font-family: jura, 'sans-serif';
+}
+
+.contact form .input-group textarea::-ms-input-placeholder,
+.contact form .input-group input::-ms-input-placeholder {
+  font-family: jura, 'sans-serif';
+}
+
+.contact form .input-group textarea::placeholder,
+.contact form .input-group input::placeholder {
+  font-family: jura, 'sans-serif';
+}
+
+.contact form .btn-contact {
+  background: #42C6FE;
+  font-family: jura, 'sans-serif';
+}
+
+.call-to-action {
+  width: 80%;
+  margin: 0 auto;
+  max-height: 70px;
+  background: #fc4445;
+  padding: 1.5rem 1rem 4rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.726);
+  border-radius: 5px;
+  margin-bottom: -3rem;
+  position: relative;
+  z-index: 5;
+}
+
+.footer {
+  width: 100%;
+  background: #001127;
+  max-height: 350px;
+}
+
+.footer .section-content {
+  text-align: center;
+  color: #bebebe;
+}
+
+.footer .section-content img .footer-logo {
+  max-width: 50px;
+}
+
+.footer .section-content .social-media img {
+  max-width: 50px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
