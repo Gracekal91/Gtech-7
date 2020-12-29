@@ -47,6 +47,12 @@ img {
   }
 }
 
+@media screen and (max-width: 491px) {
+  .btn {
+    margin-top: 0.5rem;
+  }
+}
+
 .btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -175,6 +181,23 @@ header .header-content .btn-header {
   margin-right: 15px;
 }
 
+.about-me {
+  background: #001127;
+  height: 500px;
+  padding-top: 2rem;
+  border-top: 1px solid #fc4445;
+}
+
+.about-me p {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 860px) {
+  .about-me p {
+    font-size: 1.3rem;
+  }
+}
+
 .skills {
   display: -ms-grid;
   display: grid;
@@ -225,32 +248,66 @@ header .header-content .btn-header {
   padding: 0 0 1rem 0;
 }
 
-.projects .section-content .single-row div img {
+.projects .section-content-top {
+  background: #001127;
+  height: 400px;
+  padding: 0 10%;
+}
+
+@media screen and (max-width: 491px) {
+  .projects .section-content-top {
+    height: 300px;
+  }
+}
+
+.projects .section-content-top .header-paragraph {
+  color: #e9e8e8;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 860px) {
+  .projects .section-content-top .header-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.projects .section-content-top .section-headline {
+  margin-bottom: 0;
+}
+
+.projects .projects-grid {
+  margin-top: -10rem;
+}
+
+@media screen and (max-width: 491px) {
+  .projects .projects-grid {
+    margin-top: -7rem;
+  }
+}
+
+.projects .projects-grid .single-row div img {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.projects .section-headline {
-  margin-bottom: 0;
-}
-
-.projects .btn-project {
+.projects .projects-grid .btn-project {
   color: #ffffff;
   background: #42C6FE;
 }
 
 @media screen and (min-width: 860px) {
-  .projects .single-row {
+  .projects .projects-grid .single-row {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
 }
 
 @media screen and (min-width: 860px) {
-  .projects .btn-project {
+  .projects .projects-grid .btn-project {
     margin-left: 10%;
   }
 }
