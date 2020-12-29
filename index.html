@@ -16,21 +16,21 @@
             </a>
         </div>
         <div class="nav-bar">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <div class="header-content">
         <h1 class="header-headline">Hi, Meet Grace K.</h1>
         <p class="header-paragraph">I am a web developer and Graphic Designer, I enjoy building everything from small business sites to rich interactive web apps. If you are seeking for a web presence or an employer looking to hire go ahead click on hire me.</p>
-        <button class="btn btn-header">Projects</button>
-        <button class="btn btn-header" style="background: #42C6FE;">Hire Me</button>
+        <a href="#project" style="color: aliceblue;"><button class="btn btn-header">Projects</button></a>
+        <a href="#contact" style="color: aliceblue;"><button class="btn btn-header" style="background: #42C6FE;">Hire Me</button></a>
     </div>
 </header>
 
-<section class="about-me">
+<section class="about-me" id="about">
     <div class="section-content">
         <h2 class="section-headline">About Me</h2>
         <div class="underline"></div>
@@ -51,7 +51,7 @@
     <div class="section-content">
         <div class="skills">
             <div class="skill">
-                <img src="./img/designer.svg" class="img-top" alt="">
+                <img src="./img/designer.svg" class="img-top" id="designer" alt="" style="max-width: 80px;">
                 <h3 class="skill-title">Designer</h3>
                 <p class="skill-paragraph">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
                 <div class="icons">
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="skill">
-                <img src="./img/webde.svg" alt="" class="img-top" style="max-width: 100px;">
+                <img src="./img/webde.svg" alt="" class="img-top" style="max-width: 70px;">
                 <h3 class="skill-title">web development</h3>
                 <p class="skill-paragraph">I develop website from front to back, bringing everything under one roof in other to deliver an up and Running web apps.</p>
                 <div class="icons">
@@ -88,7 +88,7 @@
     </div>
 </section>
 
-<section class="projects">
+<section class="projects" id="project">
     <div class="project-head-section">
         <div class="section-content">
             <h2 class="section-headline">Projects</h2>
@@ -113,7 +113,7 @@
     </div>
 </section>
 
-<section class="testimonials">
+<section class="testimonials" id="contact">
     <div class="section-content">
         <h2 class="section-headline">Testimonials</h2>
         <div class="underline"></div>
@@ -151,9 +151,9 @@
         <img src="./img/logo_Gtech.svg" class="footer-logo" style="max-width: 100px;" alt="">
         <p class="footer-paragraph">Studying, Learning and leveling up one day at time</p>
         <div class="social-media">
-            <img src="./img/github.png" alt="">
-            <img src="./img/dribble.png" alt="">
-            <img src="./img/linkedin.png" alt="">
+            <!-- <img src="./img/github.png" alt=""> -->
+            <!-- <img src="./img/dribble.png" alt="">
+            <img src="./img/linkedin.png" alt=""> -->
         </div>
     </div>
     <small>Developed by Me Gtechnology</small>
